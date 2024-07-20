@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: #c2c2c2;
+}
+
+nav{
+   background-color: white; 
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   height: 75px;
+   padding: 5px;
+   width: 100%;
+   position: relative;
+}
+
+ul{
+
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+li{
+    margin-right: 20px;
+}
+
+a{
+    text-decoration: none;
+    font-size: 20px;
+    padding: 15px 20px;
+    transition: .3s ease;
+}
+
+
+
+a:hover{
+    background-color: blue;
+    color: white;
+}
+
+.menu{
+    width: 60px;
+    height: 60px;
+    display: none;
+}
+
+
+@media screen and (max-width: 900px) {
+    .menu{
+        display: block;
+    }
+
+
+    ul{
+        position: absolute;
+        display: block;
+        width: 100%;
+        margin-top: 200px;
+        background-color: white;
+        display: none;
+    }
+
+
+    .menu-show{
+        display: block;
+    }
+
+    li{
+        margin-top: 10px;
+        display: block;
+    }
+}
+
+
+
+
+
+
+.hero{
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+}
+.haha{
+    font-size: 100px;
+}
+
+h6{
+    font-size: 60px;
+}
+button{
+    padding: 20px 30px;
+    border: none;
+    border-radius: 10px;
+    background-color: blue;
+    color: white;
+    margin-top: 5px;
+}
+
+
+.hero img{
+    width: 400px;
+    margin-top: 70px;
+}
+
+@media screen and (max-width: 900px){
+    .hero{
+        flex-direction: column;
+    }
+}
+
+
+#about{
+    margin-top: 100px;
+}
+
+.sub-about{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sub-about div{
+    width: 50%;
+}
+
+.sub-about div img{
+  width: 400px;
+}
+
+.store{
+    font-size: 40px;
+}
+
+.good{
+font-size: 1rem;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.us{
+    border-radius: 100px;
+}
+
+.about-title{
+    font-size: 45px;
+    font-weight: bold;
+    font-family: monospace;
+    text-align: center;
+    padding: 20px 0;
+}
+
+
+.contact{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input{
+    width: 300px;
+    height: 45px;
+    border-radius: 100px;
+    margin-top: 10px;
+    border: none;
+    outline: none;
+    padding: 5px;
+}
+
+#music{
+    width: 300px;
+    margin-top: 10px;
+}
+
+.clas{
+width: 300px;
+}
+
+@media screen and (max-width: 900px){
+    .sub-about{
+        flex-direction: column;
+    }
+}
